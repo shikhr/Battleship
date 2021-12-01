@@ -2,10 +2,11 @@ root {
   --size: 10;
 }
 $cell-size: 10px;
-$ship-color: rgb(249, 213, 189);
-$cell-color: #b85c38;
-$bg-1: #5c3d2e;
-$bg-2: #2d2424;
+$ship-color: #bdf5f9;
+$ship-color-hidden: rgb(120, 164, 165);
+$cell-color: rgb(58, 143, 136);
+$bg-1: #2e4d5c;
+$bg-2: #242a2d;
 
 *,
 *::before,
@@ -30,6 +31,7 @@ footer {
   text-align: center;
   width: 100%;
   background: $bg-1;
+  font-size: 0.85rem;
   p {
     color: $ship-color;
   }
@@ -94,9 +96,9 @@ footer {
 .cell.ship {
   background: $ship-color;
 }
-// .cell.ship.hidden-cell {
-//   background: lighten($cell-color, 20);
-// }
+.myboard .cell.ship.hidden-cell {
+  background: $ship-color-hidden;
+}
 .cell.hidden-cell {
   background: $bg-1;
 }

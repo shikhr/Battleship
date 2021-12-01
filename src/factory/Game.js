@@ -8,7 +8,7 @@ import renderPlay, {
 } from '../domFn/renderPlay';
 
 class Game {
-  attackdelay = 0;
+  attackdelay = 1500;
   currentPlayer;
   currentPlayerAttacks;
   constructor(player1, player2) {
